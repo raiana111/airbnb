@@ -1,20 +1,20 @@
-/* Gallery.css */
+
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Базовая структура с четырьмя колонками */
-    gap: 20px; /* Расстояние между элементами */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
     max-width: 1200px;
-    margin: 0 auto; /* Центрируем галерею */
+    margin: 0 auto; 
     padding: 20px;
   }
   
   .gallery-item {
-    background-color: #f2f2f2; /* Фон, если изображения нет */
+    background-color: #f2f2f2; 
     display: flex;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 1 / 1; /* Сохраняем квадратную форму */
+    aspect-ratio: 1 / 1; 
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -26,46 +26,46 @@
     object-fit: cover;
   }
   
-  /* Кастомизация расположения элементов */
+  
   .gallery-item:nth-child(1) {
-    grid-column: span 4; /* Растянуть на всю ширину */
+    grid-column: span 4; 
   }
   
   .gallery-item:nth-child(2),
   .gallery-item:nth-child(3),
   .gallery-item:nth-child(4),
   .gallery-item:nth-child(5) {
-    grid-column: span 2; /* Две фотографии в строке */
+    grid-column: span 2;
   }
   
   .gallery-item:nth-child(6),
   .gallery-item:nth-child(7),
   .gallery-item:nth-child(8) {
-    grid-column: span 4; /* В одну строку */
+    grid-column: span 4; 
   }
   
   .gallery-item:nth-child(9),
   .gallery-item:nth-child(10),
   .gallery-item:nth-child(11),
   .gallery-item:nth-child(12) {
-    grid-column: span 2; /* Две фотографии в строке */
+    grid-column: span 2; 
   }
   
   .gallery-item:nth-child(13) {
-    grid-column: span 4; /* Растянуть на всю ширину */
+    grid-column: span 4; 
   }
   
   .gallery-item:nth-child(14) {
-    grid-column: span 4; /* Растянуть на всю ширину */
+    grid-column: span 4;
   }
   
-  /* Адаптивность */
+
   @media (max-width: 768px) {
     .gallery-container {
-      grid-template-columns: 1fr; /* Одна колонка на узких экранах */
+      grid-template-columns: 1fr; 
     }
     .gallery-item {
-      grid-column: span 1; /* Все элементы занимают всю ширину */
+      grid-column: span 1; 
     }
   }
   

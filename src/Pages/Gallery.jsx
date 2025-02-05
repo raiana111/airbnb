@@ -1,24 +1,23 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { images } from "../components/CardGrid"; // Убедитесь, что images импортирован корректно
-import Header from "../components/Header"; // Импортируем Header
-import Footer from "../components/Footer"; // Импортируем Footer
+import { images } from "../components/CardGrid";
+import Header from "../components/Header"; 
+import Footer from "../components/Footer"; 
 import "./Gallery.css";
 
 export default function Gallery() {
-  const { state } = useLocation(); // Получаем переданный state
-  const navigate = useNavigate(); // Инициализируем navigate
+  const { state } = useLocation(); 
+  const navigate = useNavigate(); 
 
-  const index = state?.index || 0; // Проверяем наличие state и index, устанавливаем значение по умолчанию 0
+  const index = state?.index || 0; 
 
-  // Проверка на наличие массива images
-  const mainImage = images?.[index] || images?.[0]; // Если изображения по индексу нет, показываем первое изображение
+  const mainImage = images?.[index] || images?.[0]; 
 
   if (!images || images.length === 0) {
     return <p>Изображения недоступны.</p>;
   }
 
-  // Массив отзывов с фотографиями
+
   const reviews = [
     {
       name: "航大",
@@ -63,15 +62,15 @@ export default function Gallery() {
 
   return (
     <div style={{ fontFamily: "Arial, sans-serif", maxWidth: "1200px", margin: "0 auto" }}>
-      {/* Header */}
+      
       <Header />
 
-      {/* Main Content */}
+      
       <main style={{ marginTop: "20px" }}>
-        {/* Title */}
+        
         <h2 style={{ fontSize: "22px", color: "#333" }}>Комната, Khujirt, Монголия</h2>
 
-        {/* Image Gallery */}
+        
         <div style={{ display: "flex", gap: "10px", marginTop: "20px" }}>
           <img src={mainImage} alt="Main" style={{ width: "60%", borderRadius: "8px" }} />
           <div style={{ display: "flex", flexDirection: "column", gap: "10px", width: "40%" }}>
@@ -86,7 +85,6 @@ export default function Gallery() {
           </div>
         </div>
 
-        {/* Host Information */}
         <div
           style={{
             padding: "15px",
@@ -99,7 +97,6 @@ export default function Gallery() {
           <p style={{ fontSize: "14px", color: "#555" }}>77 отзывов от гостей</p>
         </div>
 
-        {/* Booking Section */}
         <aside
           style={{
             padding: "15px",
@@ -137,7 +134,7 @@ export default function Gallery() {
           </button>
         </aside>
 
-        {/* Guest Reviews */}
+       
         <section style={{ marginTop: "20px" }}>
           <h3 style={{ fontSize: "18px", marginBottom: "10px" }}>Отзывы гостей</h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
@@ -169,7 +166,6 @@ export default function Gallery() {
         </section>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

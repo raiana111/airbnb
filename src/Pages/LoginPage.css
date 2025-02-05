@@ -1,4 +1,4 @@
- /* Основные стили */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,7 +8,7 @@ body {
     text-align: center;
   }
   
-  /* Хедер */
+ 
   .header {
     padding: 20px;
     background-color: #007bff;
@@ -37,12 +37,12 @@ body {
     background-color: #f0f0f0;
   }
   
-  /* Основной контент */
+ 
   .content {
     padding: 20px;
   }
   
-  /* Модальное окно логина */
+
   .login-modal {
     position: fixed;
     top: 0;
@@ -93,7 +93,7 @@ body {
     background-color: #0056b3;
   }
   
-  /* Кнопки социальных сетей */
+ 
   .social-buttons button {
     width: 100%;
     padding: 10px;
@@ -109,7 +109,7 @@ body {
     background: #e0e0e0;
   }
   
-  /* Кнопка закрытия */
+
   .close-button {
     margin-top: 20px;
     padding: 10px 20px;

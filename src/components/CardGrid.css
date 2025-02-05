@@ -1,13 +1,8 @@
-/* .card-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
-} */
+
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 колонки */
-  grid-template-rows: repeat(3, 1fr); /* 3 строки */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
   gap: 20px;
   padding: 20px;
   padding: 120px 240px;
@@ -17,11 +12,10 @@
   
   justify-content: center;
   align-items: center;
-  width: 230px; /* Карточки будут занимать всю ширину своих ячеек */
-  height: 300px; /* Фиксированная высота */
+  width: 230px; 
+  height: 300px; 
   border: 1px solid #ccc;
   border-radius: 8px;
-  /* overflow: hidden; */
   text-align: center;
 }
 
@@ -30,10 +24,7 @@
   height: 180px;
   object-fit: cover;
 }
-/* .card .size {
-  width: 150px;
-  height: 180px;
-} */
+
 
 .card h3 {
   margin: 10px 0;

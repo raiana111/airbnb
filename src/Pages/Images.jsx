@@ -1,5 +1,5 @@
 import React from "react";
-import "./Gallery.css"; // Подключаем стили
+import "./Gallery.css";
 
 const images = [
   "https://a0.muscache.com/im/pictures/93d35f0e-c682-4d4a-8f98-6d8c798f293c.jpg?im_w=1200&im_format=avif", // Замените на реальные ссылки

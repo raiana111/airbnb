@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css"; // Подключаем стили
+import "./App.css"; 
 
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="app">
-      {/* Хедер */}
       <header className="header">
         <h1>Airent</h1>
         <button className="login-button" onClick={handleLoginClick}>
@@ -23,11 +22,10 @@ function App() {
         </button>
       </header>
 
-      {/* Основной контент */}
       <main className="content">
         {!isLoginVisible && <p>Список объектов для аренды...</p>}
 
-        {/* Модальное окно логина */}
+        
         {isLoginVisible && (
           <div className="login-modal">
             <div className="login-form">
